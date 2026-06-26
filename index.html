@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Social Network</title>
+  <style>
+    body { font-family: 'Tahoma'; margin:0; padding:0; background:#f0f2f5; color:#333; }
+    nav { background:#3b5998; color:#fff; padding:15px; display:flex; justify-content:space-between; align-items:center; }
+    nav h1 { margin:0; font-size:22px; }
+    nav ul { list-style:none; display:flex; gap:20px; margin:0; padding:0; }
+    nav ul li { cursor:pointer; }
+    .container { max-width:1200px; margin:auto; display:flex; gap:20px; padding:20px; }
+    .sidebar { width:25%; }
+    .sidebar .card { background:#fff; padding:15px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-bottom:20px; }
+    .main { width:75%; }
+    .new-post { background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-bottom:20px; }
+    .new-post textarea { width:100%; height:80px; padding:10px; border:1px solid #ccc; border-radius:5px; }
+    .btn { background:#3b5998; color:#fff; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; margin-top:10px; }
+    .feed .post { background:#fff; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); margin-bottom:20px; padding:20px; }
+    .post h3 { color:#3b5998; margin:0; }
+    .post p { color:#555; }
+    .actions { margin-top:10px; }
+    .actions button { margin-right:10px; }
+    footer { background:#2d4373; color:#fff; text-align:center; padding:15px; margin-top:40px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Mini Social Network</h1>
+    <ul>
+      <li>Home</li>
+      <li>Profile</li>
+      <li>Friends</li>
+      <li>Logout</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="card">
+        <h2>الأصدقاء</h2>
+        <p>👤 أحمد</p>
+        <p>👤 سارة</p>
+        <p>👤 محمد</p>
+      </div>
+      <div class="card">
+        <h2>المجموعات</h2>
+        <p>💬 مطوري الويب</p>
+        <p>💬 عشاق التقنية</p>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="new-post">
+        <h2>أضف منشور جديد</h2>
+        <textarea placeholder="اكتب ما تفكر فيه..."></textarea>
+        <button class="btn">نشر</button>
+      </div>
+
+      <div class="feed">
+        <div class="post">
+          <h3>أحمد</h3>
+          <p>مرحبا! هذه أول مشاركة لي هنا 🎉</p>
+          <div class="actions">
+            <button class="btn">إعجاب</button>
+            <button class="btn">تعليق</button>
+          </div>
+        </div>
+        <div class="post">
+          <h3>سارة</h3>
+          <p>أحب هذه الشبكة الاجتماعية البسيطة 😍</p>
+          <div class="actions">
+            <button class="btn">إعجاب</button>
+            <button class="btn">تعليق</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Mini Social Network - جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>
